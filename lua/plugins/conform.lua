@@ -8,7 +8,7 @@ return {
       raco_fmt = {
         command = "raco",
         args = { "fmt" },
-        condition = function(_, ctx)
+        condition = function(self, ctx)
           return vim.fs.basename(ctx.filename) ~= ".rkt"
         end,
       },

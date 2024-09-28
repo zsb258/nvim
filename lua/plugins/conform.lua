@@ -7,7 +7,7 @@ return {
     formatters = {
       raco_fmt = {
         command = "raco",
-        args = { "fmt" },
+        args = { "fmt", "--width", "80" },
         condition = function(self, ctx)
           return vim.fs.basename(ctx.filename) ~= ".rkt"
         end,
